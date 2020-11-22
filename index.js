@@ -1,0 +1,1 @@
+var result = change.apply;
