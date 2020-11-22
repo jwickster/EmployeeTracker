@@ -16,9 +16,10 @@ CREATE TABLE department(
 );
 
 CREATE TABLE role(
+
     id integer auto_increment not null,
-    title varchar(30) not null,
-    salary decimal not null,
+    title VARCHAR (30) not null,
+    salary DECIMAL not null,
     department_id INTEGER not null,
     constraint fk_department_id foreign key (department_id) references department(id),
     primary key(id)
@@ -38,7 +39,7 @@ CREATE TABLE employee(
     -- This field may be null if the employee has no manager
     manager_id integer,
     constraint fk_manager_id FOREIGN KEY (manager_id) REFERENCES employee(id),
-    Primary key(id)
+    primary key(id)
 );
 
 select * from employee;
@@ -74,17 +75,17 @@ VALUES ("Manager", 65000, 5);
 select * from role;
 
 INSERT into employee (first_name, last_name, role_id)
-values ("John", "Stamos", 3);
+values ("Micky", "Mouse", 3);
 INSERT into employee (first_name, last_name, role_id)
-values ("Jim", "Baker", 4);
+values ("Tonya", "Harding", 4);
 INSERT into employee (first_name, last_name, role_id)
-values ("George", "Washington", 5);
+values ("Abe", "Lincoln", 5);
 INSERT into employee (first_name, last_name, role_id)
-values ("Meghan", "Kelly", 6);
+values ("Beckett", "Wickster", 6);
 INSERT into employee (first_name, last_name, role_id)
-values ("Tom", "Hanks", 7);
+values ("Susan", "Anderson", 7);
 INSERT into employee (first_name, last_name, role_id)
-values ("Dolly", "Parton", 8);
+values ("Linda", "Staley", 8);
 
 select * from employee;
 

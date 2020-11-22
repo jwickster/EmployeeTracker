@@ -60,6 +60,7 @@ function runSearch() {
 
 function departmentView() {
   var sqlStr = "SELECT * FROM department";
+  
   connection.query(sqlStr, function (err, result) {
     if (err) throw err;
     
@@ -70,8 +71,10 @@ function departmentView() {
 
 function employeeView() {
   var sqlStr = "SELECT first_name, last_name, title, salary FROM employee ";
+  
   sqlStr += "LEFT JOIN role ";
   sqlStr += "ON employee.role_id = role.id"
+  
   connection.query(sqlStr, function (err, result) {
     if (err) throw err;
     
