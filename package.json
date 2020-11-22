@@ -1,0 +1,19 @@
+{
+  "name": "employeetracker",
+  "version": "1.0.0",
+  "description": "Tracker for employees with sql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwickster/EmployeeTracker.git"
+  },
+  "author": "Josh Wickster",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jwickster/EmployeeTracker/issues"
+  },
+  "homepage": "https://github.com/jwickster/EmployeeTracker#readme"
+}
