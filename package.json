@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/jwickster/EmployeeTracker/issues"
   },
-  "homepage": "https://github.com/jwickster/EmployeeTracker#readme"
+  "homepage": "https://github.com/jwickster/EmployeeTracker#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3",
+    "mysql": "^2.18.1"
+  }
 }
