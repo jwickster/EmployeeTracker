@@ -29,3 +29,6 @@ CREATE TABLE employee(
     constraint fk_manager_id FOREIGN KEY (manager_id) REFERENCES employee(id),
     Primary key(id)
 );
+
+
+
