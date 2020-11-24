@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="90ad05ff-dfa4-4bf6-ae01-0ef2a47c150f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employee-Schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Employee-Schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +80,7 @@
       <workItem from="1606096228313" duration="91000" />
       <workItem from="1606096344920" duration="252000" />
       <workItem from="1606138498332" duration="1198000" />
+      <workItem from="1606256988291" duration="1663000" />
     </task>
     <servers />
   </component>
@@ -103,6 +103,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2336" y="452" key="#SQL_Dialects" timestamp="1606259086343">
+      <screen x="0" y="25" width="5120" height="1361" />
+    </state>
+    <state x="2336" y="452" key="#SQL_Dialects/0.25.5120.1361@0.25.5120.1361" timestamp="1606259086343" />
     <state x="2624" y="362" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606088354726">
       <screen x="0" y="25" width="5120" height="1361" />
     </state>
