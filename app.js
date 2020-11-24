@@ -73,10 +73,12 @@ function departmentView() {
 function employeeView() {
   var sqlStr = "SELECT first_name, last_name, title, salary FROM employee ";
   
-  for (const leftjoinRoleElement of
-        sqlStr += 'LEFT JOIN role ') {
+  for (const leftjoinRoleElement of sqlStr += 'LEFT JOIN role ') {
+    sqlStr += "ON employee.role_id = role.id"
   };
-  sqlStr += "ON employee.role_id = role.id"
+  /*
+   sqlStr += "ON employee.role_id = role.id"
+  */
 
   connection.query(sqlStr, function (err, result) {
     if (err)
