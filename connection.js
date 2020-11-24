@@ -5,16 +5,16 @@ var connection = mysql.createConnection({
   port: 3300,
   user: "root",
   database: "employee_tracker"
-  
+
 });
 
-connection.connect(err => {
+connection.connect(function (err) {
   if (err)
     throw err;
-    console.log(err);
+  console.log(err);
   //else
   console.log("connected as id " + connection.threadId);
 });
 
 
-module.exports = connection
+module.exports = connection;
