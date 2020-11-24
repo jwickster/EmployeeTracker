@@ -32,60 +32,62 @@ runSearch();
 
 function runSearch() {
   inquirer.prompt({
-        name: "action",
-        type: "list",
-        message: "What would you like to do?",
-        choices: viewPosition
-      }).then(function (answer) {
-        
-        //TODO Switch
-        if (answer.action === viewPosition[0]) {
-          departmentView();
-        } else if (answer.action === viewPosition[1]) {
-          roleView();
-        } else if (answer.action === viewPosition[2]) {
-          employeeView();
-        } else if (answer.action === viewPosition[3]) {
-          updateEmployee();
-          connection.end();
-        } else if (answer.action === updateName[4]) {
-          connection.end();
-        }else {
-          alert("Not working " + answer)
-        }
-      })
+    name: "action",
+    type: "list",
+    message: "What would you like to do?",
+    choices: viewPosition
+  }).then(function (answer) {
+
+    //TODO Switch
+    if (answer.action === viewPosition[0]) {
+      departmentView();
+    } else if (answer.action === viewPosition[1]) {
+      roleView();
+    } else if (answer.action === viewPosition[2]) {
+      employeeView();
+    } else if (answer.action === viewPosition[3]) {
+      updateEmployee();
+      connection.end();
+    } else if (answer.action === updateName[4]) {
+      connection.end();
+    } else {
+      alert("Not working " + answer)
+    }
+  });
 }
 
 
 
 function departmentView() {
   var sqlStr = "SELECT * FROM department";
-  
+
   connection.query(sqlStr, function (err, result) {
-    if (err) throw err;
-    
-    console.table(result)
+    if (err)
+      throw err;
+    //else console log the result and runSearch method
+    console.table(result);
     runSearch();
-  })
+  });
 }
 
 function employeeView() {
   var sqlStr = "SELECT first_name, last_name, title, salary FROM employee ";
-  
+
   sqlStr += "LEFT JOIN role ";
   sqlStr += "ON employee.role_id = role.id"
-  
+
   connection.query(sqlStr, function (err, result) {
-    if (err) throw err;
-    
-    console.table(result)
+    if (err)
+      throw err;
+    //Else
+    console.table(result);
     runSearch();
-  })
+  });
 }
 
 function roleView() {
   var sqlStr = "SELECT * FROM role";
-  
+
   connection.query(sqlStr, function (err, result) {
     if (err)
       throw err;
@@ -96,21 +98,21 @@ function roleView() {
 }
 
 
-const updateEmployee = function() {
-  
+const updateEmployee = function () {
+
   function runUpdateSearch() {
     inquirer
-        .prompt({
-          name: 'action',
-          type: 'list',
-          message: 'Which employee do you want to update?',
-          choices: selectEmployees
-        });
-    
+      .prompt({
+        name: 'action',
+        type: 'list',
+        message: 'Which employee do you want to update?',
+        choices: selectEmployees
+      });
+
   }
-  
+
   runUpdateSearch();
-}
+};
 
 
 // const updateWorker = function() {
@@ -124,4 +126,3 @@ const updateEmployee = function() {
 //       })
 //   runUpdateSearch();
 // }
-
