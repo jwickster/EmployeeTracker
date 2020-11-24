@@ -12,16 +12,22 @@ CREATE TABLE department(
     id integer auto_increment not null,
     -- * **name** - VARCHAR(30) to hold department name
     name varchar (30) not null,
+
     primary key(id)
 );
 
 CREATE TABLE role(
-
+    -- https://dev.mysql.com/doc/mysql-tutorial-excerpt/5.7/en/example-auto-increment.html
     id integer auto_increment not null,
+
     title VARCHAR (30) not null,
+
     salary DECIMAL not null,
+
     department_id INTEGER not null,
-    constraint fk_department_id foreign key (department_id) references department(id),
+
+    CONSTRAINT fk_department_id foreign key (department_id) references department(id),
+
     primary key(id)
 );
 
@@ -39,6 +45,7 @@ CREATE TABLE employee(
     -- This field may be null if the employee has no manager
     manager_id integer,
     constraint fk_manager_id FOREIGN KEY (manager_id) REFERENCES employee(id),
+    
     primary key(id)
 );
 
@@ -48,12 +55,16 @@ select * from department;
 
 INSERT into department (name)
 VALUES ("Sales");
+
 INSERT into department (name)
 VALUES ("Engineering");
+
 INSERT into department (name)
 VALUES ("Finance");
+
 INSERT into department (name)
 VALUES ("Legal");
+
 INSERT into department (name)
 VALUES ("Manager");
 
@@ -61,14 +72,19 @@ select * from department;
 
 INSERT into role (title, salary, department_id)
 VALUES ("Sales Lead", 45000, 1);
+
 INSERT into role (title, salary, department_id)
 VALUES ("Salesperson", 35000, 1);
+
 INSERT into role (title, salary, department_id)
 VALUES ("Lead Engineer", 43000, 2);
+
 INSERT into role (title, salary, department_id)
 VALUES ("Accountant", 50000, 3);
+
 INSERT into role (title, salary, department_id)
 VALUES ("Legal", 50000, 4);
+
 INSERT into role (title, salary, department_id)
 VALUES ("Manager", 65000, 5);
 
@@ -76,14 +92,19 @@ select * from role;
 
 INSERT into employee (first_name, last_name, role_id)
 values ("Micky", "Mouse", 3);
+
 INSERT into employee (first_name, last_name, role_id)
 values ("Tonya", "Harding", 4);
+
 INSERT into employee (first_name, last_name, role_id)
 values ("Abe", "Lincoln", 5);
+
 INSERT into employee (first_name, last_name, role_id)
 values ("Beckett", "Wickster", 6);
+
 INSERT into employee (first_name, last_name, role_id)
 values ("Susan", "Anderson", 7);
+
 INSERT into employee (first_name, last_name, role_id)
 values ("Linda", "Staley", 8);
 
