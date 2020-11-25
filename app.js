@@ -51,7 +51,8 @@ function runSearch() {
     } else if (answer.action === updateName[4]) {
       connection.end();
     } else {
-      alert("Not working " + answer)
+      alert("Not working " + answer);
+      console.log(stackTrace);
     }
   });
 }
