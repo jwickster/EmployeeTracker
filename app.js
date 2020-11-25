@@ -40,15 +40,20 @@ function runSearch() {
 
     //TODO Switch
     if (answer.action === viewPosition[0]) {
+      console.log("Departments");
       departmentView();
     } else if (answer.action === viewPosition[1]) {
+      console.log("Roles");
       roleView();
     } else if (answer.action === viewPosition[2]) {
+      console.log("Employees");
       employeeView();
     } else if (answer.action === viewPosition[3]) {
+      console.log("Update Employees");
       updateEmployee();
       connection.end();
     } else if (answer.action === updateName[4]) {
+      console.log("Exit");
       connection.end();
     } else {
       alert("Not working " + answer);
@@ -73,9 +78,9 @@ function departmentView() {
 
 function employeeView() {
   var sqlStr = "SELECT first_name, last_name, title, salary FROM employee ";
-  
+
   for (const leftjoinRoleElement of sqlStr += 'LEFT JOIN role ') {
-    sqlStr += "ON employee.role_id = role.id"
+    sqlStr += "ON employee.role_id = role.id";
   };
   /*
    sqlStr += "ON employee.role_id = role.id"
