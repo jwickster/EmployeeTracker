@@ -1,5 +1,5 @@
 //Need those dependancies
-const mysql = require('mysql');
+const mysql = require('mysql2');
 //const inquirer = require("inquirer");
 
 //create connection

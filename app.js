@@ -2,6 +2,7 @@ var inquirer = require("inquirer");
 var connection = require('./connection.js');
 
 
+
 const viewPosition = [
   "Departments",
   "Roles",
