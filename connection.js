@@ -1,12 +1,14 @@
 //Need those dependancies
-var mysql = require("mysql");
+const mysql = require('mysql');
+//const inquirer = require("inquirer");
 
 //create connection
 var connection = mysql.createConnection({
   host: "localhost",
-  port: 3300,
+  port: 3306,
   user: "root",
-  database: "employee_tracker"
+  password: "tessav081",
+  database: "Employee_Tracker"
 
 });
 //instantiate the connection

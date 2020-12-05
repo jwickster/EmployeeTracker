@@ -1,5 +1,5 @@
 var inquirer = require("inquirer");
-var connection = require('./connection');
+var connection = require('./connection.js');
 
 
 const viewPosition = [
