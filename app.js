@@ -1,5 +1,8 @@
 var inquirer = require("inquirer");
 var connection = require('./connection');
+
+
+
 const viewOptions = [
   "View Departments",
   "View Roles",
@@ -15,7 +18,6 @@ const employeeOptions = [
   "Bill Clinton",
   "Barak Obama",
   "Joe Biden",
-  "Oprah Winfrey",
   "exit"
 ];
 
@@ -73,12 +75,12 @@ function departmentView() {
 }
 
 function employeeView() {
-  var sqlStr = "SELECT first_name, last_name, title, salary FROM employee ";
-  sqlStr += "LEFT JOIN role ";
-  sqlStr += "ON employee.role_id = role.id"
+  var sqlStr = "SELECT * FROM employee ";
+  sqlStr = sqlStr + "LEFT JOIN role ";
+  sqlStr = sqlStr + "ON employee.role_id = role.id"
   connection.query(sqlStr, function (err, result) {
-    if (err) throw err;
-    
+    if (err)
+      throw err;
     console.table(result)
     runSearch();
   })
@@ -95,17 +97,23 @@ function roleView() {
 }
 
 
-const updateEmployee = () => {
+const updateEmployee = function() {
   
   function runUpdateSearch() {
     inquirer
         .prompt({
-          name: "action",
-          type: "list",
-          message: "Which employee do you want to update?",
+          name: 'action',
+          type: 'list',
+          message: 'Which employee do you want to update?',
           choices: employeeOptions
-        })
+        }).then(function(response) {
+      connection.query('UPDATE employee SET role_id = ? WHERE first_name = ?',
+          [response.role_id, response.first_name], function
+              (err, result) {
+          });
+    });
     
   }
+  
   runUpdateSearch();
 }
