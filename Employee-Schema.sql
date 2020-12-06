@@ -20,9 +20,9 @@ CREATE TABLE role(
     title VARCHAR (30) not null,
     salary DECIMAL not null,
     department_id INTEGER not null,
-    CONSTRAINT fk_department_id
-        foreign key (department_id)
-            references department(id),
+#     CONSTRAINT fk_department_id
+#         foreign key (department_id)
+#             references department(id),
 
     primary key(id)
 );
@@ -36,11 +36,11 @@ CREATE TABLE employee(
     last_name varchar(30) not null,
     -- **role_id** - INT to hold reference to role employee has
     role_id integer not null,
-    constraint fk_role_id FOREIGN KEY (role_id) REFERENCES role(id),
+#     constraint fk_role_id FOREIGN KEY (role_id) REFERENCES role(id),
     -- **manager_id** - INT to hold reference to another employee that manager of the current employee.
     -- This field may be null if the employee has no manager
     manager_id integer not null,
-    constraint fk_manager_id FOREIGN KEY (manager_id) REFERENCES employee(id),
+#     constraint fk_manager_id FOREIGN KEY (manager_id) REFERENCES employee(id),
     
     primary key(id)
 );
@@ -85,45 +85,32 @@ select * from department;
 INSERT into role
 VALUES (5, "The Boss", 56000, 5);
 
-INSERT into role (title, salary, department_id)
-VALUES ("Salesperson", 35000, 1);
-
-INSERT into role (title, salary, department_id)
-VALUES ("Lead Engineer", 43000, 2);
-
-INSERT into role (title, salary, department_id)
-VALUES ("Accountant", 50000, 3);
-
-INSERT into role (title, salary, department_id)
-VALUES ("Legal", 50000, 4);
-
-INSERT into role (title, salary, department_id, manager_id)
-VALUES ("Manager", 65000, 5, 56);
+INSERT into role
+VALUES (10, "Salesperson", 35000, 1);
 
 INSERT into role
-VALUES ("Manager", 65000, 5, 56);
+VALUES (15, "Lead Engineer", 43000, 2);
+
+INSERT into role
+VALUES (25, "Legal", 50000, 4);
+
 
 select * from role;
 
-INSERT into employee (first_name, last_name, role_id)
-values ("Micky", "Mouse", 3);
-
-INSERT into employee (first_name, last_name, role_id)
-values ("Tonya", "Harding", 4);
-
-INSERT into employee (first_name, last_name, role_id)
-values ("Abe", "Lincoln", 5);
-
-INSERT into employee (first_name, last_name, role_id)
-values ("Beckett", "Wickster", 6);
-
-INSERT into employee (first_name, last_name, role_id)
-values ("Susan", "Anderson", 7);
+INSERT into employee
+values (1, "Micky", "Mouse", 3, 8);
 
 INSERT into employee
-values ("Linda", "Staley", 8);
+values (2, "Donald", "Duck", 2,20);
 
-select * from employee;
+INSERT into employee
+values (16, "Abe", "Lincoln", 5, 7);
+
+INSERT into employee
+values (1, "Donald", "Duck", 13, 45);
+
+INSERT into employee
+values (15, "Beckett", "Wickster", 5, 7);
 
 
 
