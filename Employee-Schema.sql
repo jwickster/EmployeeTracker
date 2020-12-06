@@ -105,6 +105,11 @@ values (1, "Donald", "Duck", 13, 45);
 INSERT into employee
 values (15, "Beckett", "Wickster", 5, 7);
 
+INSERT into Employee_Tracker.employee
+values (5, "Boocake", "Wickster", 5, 7);
+
+INSERT into Employee_Tracker.employee
+values (7, "Mozzie", "Meow", 3, 9);
 
 
 
