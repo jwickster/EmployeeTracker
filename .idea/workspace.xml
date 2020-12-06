@@ -56,6 +56,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager" selected="Database Script.Employee-Schema.sql">
     <configuration name="Employee-Schema.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/Employee-Schema.sql" />
@@ -89,7 +94,7 @@
       <workItem from="1606138498332" duration="1198000" />
       <workItem from="1606256988291" duration="2240000" />
       <workItem from="1606259679960" duration="1448000" />
-      <workItem from="1607207735560" duration="10757000" />
+      <workItem from="1607207735560" duration="11282000" />
     </task>
     <servers />
   </component>

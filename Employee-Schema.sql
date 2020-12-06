@@ -50,22 +50,6 @@ select * from role;
 select * from department;
 
 
-# INSERT into department
-# VALUES    (44,"Tony"),
-#           (34, "Alfred"),
-#           (54,"Beckett");
-#
-#
-# Insert into role
-# VALUES (155, "Mr",100.00, 50),
-#        (155, "Boss",100.00, 23),
-#        (255, "Pleb",5.00, 5),
-#        (1, "POTUS", 400000,3);
-#
-# Insert into employee
-# VALUES (5, "Thanos","Nana",8675309, 25),
-#        (34, "Epods","Jacob",5656, 15),
-#        (15, "Junke","Bobba",45, 34);
 
 
 
@@ -79,6 +63,15 @@ VALUES (24, "Music");
 
 INSERT into department
 VALUES (34, "Books");
+
+INSERT into department
+VALUES (44, "Propeganda");
+
+INSERT into department
+VALUES (54, "Intel");
+
+INSERT into department
+VALUES (34, "Bad Music");
 
 select * from department;
 
