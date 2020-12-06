@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -21,10 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="90ad05ff-dfa4-4bf6-ae01-0ef2a47c150f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employee-Schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Employee-Schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/connection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +93,7 @@
       <workItem from="1606138498332" duration="1198000" />
       <workItem from="1606256988291" duration="2240000" />
       <workItem from="1606259679960" duration="1448000" />
-      <workItem from="1607207735560" duration="2757000" />
+      <workItem from="1607207735560" duration="7752000" />
     </task>
     <servers />
   </component>
@@ -113,55 +114,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2336" y="452" key="#SQL_Dialects" timestamp="1606259086343">
-      <screen x="0" y="25" width="5120" height="1361" />
-    </state>
-    <state x="2336" y="452" key="#SQL_Dialects/0.25.5120.1361@0.25.5120.1361" timestamp="1606259086343" />
-    <state x="2624" y="362" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606088354726">
-      <screen x="0" y="25" width="5120" height="1361" />
-    </state>
-    <state x="2624" y="362" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.5120.1361@0.25.5120.1361" timestamp="1606088354726" />
-    <state x="320" y="132" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1606096232225">
-      <screen x="0" y="25" width="1440" height="815" />
-    </state>
-    <state x="320" y="132" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.25.1440.815@0.25.1440.815" timestamp="1606096232225" />
-    <state width="1797" height="372" key="GridCell.Tab.0.bottom" timestamp="1606070695062">
-      <screen x="0" y="25" width="5120" height="1361" />
-    </state>
-    <state width="1797" height="372" key="GridCell.Tab.0.bottom/0.25.5120.1361@0.25.5120.1361" timestamp="1606070695062" />
-    <state width="1797" height="372" key="GridCell.Tab.0.center" timestamp="1606070695061">
-      <screen x="0" y="25" width="5120" height="1361" />
-    </state>
-    <state width="1797" height="372" key="GridCell.Tab.0.center/0.25.5120.1361@0.25.5120.1361" timestamp="1606070695061" />
-    <state width="1797" height="372" key="GridCell.Tab.0.left" timestamp="1606070695061">
-      <screen x="0" y="25" width="5120" height="1361" />
-    </state>
-    <state width="1797" height="372" key="GridCell.Tab.0.left/0.25.5120.1361@0.25.5120.1361" timestamp="1606070695061" />
-    <state width="1797" height="372" key="GridCell.Tab.0.right" timestamp="1606070695061">
-      <screen x="0" y="25" width="5120" height="1361" />
-    </state>
-    <state width="1797" height="372" key="GridCell.Tab.0.right/0.25.5120.1361@0.25.5120.1361" timestamp="1606070695061" />
-    <state x="238" y="382" key="IDE.errors.dialog" timestamp="1606141506933">
-      <screen x="0" y="25" width="5120" height="1361" />
-    </state>
-    <state x="238" y="382" key="IDE.errors.dialog/0.25.5120.1361@0.25.5120.1361" timestamp="1606141506933" />
-    <state x="2501" y="254" key="SettingsEditor" timestamp="1606261125031">
-      <screen x="0" y="25" width="5120" height="1361" />
-    </state>
-    <state x="2501" y="254" key="SettingsEditor/0.25.5120.1361@0.25.5120.1361" timestamp="1606261125031" />
-    <state x="489" y="281" key="cloudConfig.PluginsDialog" timestamp="1606096309590">
-      <screen x="0" y="25" width="1440" height="815" />
-    </state>
-    <state x="489" y="281" key="cloudConfig.PluginsDialog/0.25.1440.815@0.25.1440.815" timestamp="1606096309590" />
-    <state x="325" y="244" width="1441" height="927" key="dock-window-1" timestamp="1606071262950">
-      <screen x="0" y="25" width="5120" height="1361" />
-    </state>
-    <state x="325" y="244" width="1441" height="927" key="dock-window-1/0.25.5120.1361@0.25.5120.1361" timestamp="1606071262950" />
-    <state x="2310" y="338" width="838" height="1032" key="search.everywhere.popup" timestamp="1606072592435">
-      <screen x="0" y="25" width="5120" height="1361" />
-    </state>
-    <state x="2310" y="338" width="838" height="1032" key="search.everywhere.popup/0.25.5120.1361@0.25.5120.1361" timestamp="1606072592435" />
   </component>
 </project>
